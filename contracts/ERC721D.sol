@@ -42,13 +42,16 @@ contract ERC721D is Ownable {
     }
 
     function founderWithdraw() external onlyOwner {
-        Address.sendValue(payable(owner()), founderIncome);
+        uint256 income = founderIncome;
         founderIncome = 0;
+        Address.sendValue(payable(owner()), income);
         emit FounderWithdraw(founderIncome);
     }
+    
     function communityWithdraw() external onlyOwner {
-        Address.sendValue(payable(owner()), communityIncome);
+        uint256 income = communityIncome;
         communityIncome = 0;
+        Address.sendValue(payable(owner()), income);
         emit CommunityWithdraw(communityIncome);
     }
  
