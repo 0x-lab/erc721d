@@ -9,3 +9,5 @@ The most important thing in the crypto community is the trust between Holders an
 
 **One more thing**
 The founder cannot withdraw the entire funds unless accumulated profits reaches 10,000.00 ETH.
+
+http://www.erc721d.org/
